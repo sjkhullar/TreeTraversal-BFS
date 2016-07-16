@@ -3,13 +3,14 @@ package org.learn.Question;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LevelOrder {
+public class TreeTraversalBFS {
 
 	public static void levelOrder(Node root) {
 		if (root == null) {
-			System.out.println("Queue is empty");
+			System.out.println("Tree is empty");
 			return;
 		}
+
 		Queue<Node> queue = new LinkedList<Node>();
 		queue.offer(root);
 
